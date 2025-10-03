@@ -1,0 +1,16 @@
+// базовые
+@use "modules/base/reset";
+@use "modules/base/variables";
+
+// глобальные
+@use "modules/base/global";
+
+// компоненты
+
+@use "modules/components/buttons";
+@use "modules/components/sliders";
+@use "modules/components/footer";
+@use "modules/components/header";
+
+//тестовые стили (в дальнейшем удалить)
+@use "modules/components/test";
