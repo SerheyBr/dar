@@ -32,6 +32,16 @@ body {
   text-transform: uppercase;
   color: #2ecc71;
 }
+@media (max-width: $breakpoint-lg) {
+  .section-title {
+    font-size: 32px;
+  }
+}
+@media (max-width: $breakpoint-sm) {
+  .section-title {
+    font-size: 24px;
+  }
+}
 
 .button {
   background-color: $green;
