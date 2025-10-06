@@ -47,6 +47,7 @@ h6,
 p {
   font-size: inherit;
   font-weight: inherit;
+  line-height: inherit;
 }
 
 ul,
@@ -93,6 +94,7 @@ input[type="submit"] {
   background-color: transparent;
   background: none;
   cursor: pointer;
+  line-height: inherit;
 }
 
 input:focus,
@@ -121,4 +123,9 @@ input[type="file"] {
 
 html {
   scroll-behavior: smooth;
+}
+
+html,
+body {
+  overflow-x: clip;
 }

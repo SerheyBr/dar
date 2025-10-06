@@ -1,28 +1,77 @@
 @use "variables" as *;
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: "Montserrat", sans-serif;
+  font-family: $font-family;
   font-weight: 400;
   font-size: 16px;
   line-height: 150%;
-}
-
-main {
-  flex: 1;
+  background-color: #050c25;
+  color: #fff;
+  line-height: 1.5;
+  width: 100%;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1762px;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 20px;
+}
+@media (max-width: $breakpoint-sm) {
+  .container {
+    padding: 0 15px;
+  }
+}
+
+.section {
+  margin-bottom: 80px;
+  // overflow-x: hidden;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #2ecc71;
+}
+
+.button {
+  background-color: $green;
+  border-radius: 14px 50px 50px 14px;
+  padding: 22px 24px 22px 23px;
+  font-weight: 500;
+  // font-size: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  white-space: nowrap;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    span {
+      background-color: #fff;
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .button {
+    padding: 14px 9px 13px 25px;
+    &__wrapper {
+      span {
+        width: 36px;
+        height: 36px;
+        svg {
+          width: 35%;
+        }
+      }
+    }
+  }
 }
