@@ -1,15 +1,28 @@
-const swiper = new Swiper(".my-slider", {
+const swiper = new Swiper(".services-slider", {
   direction: "horizontal",
-  loop: true,
+  loop: false,
   slidesPerView: 3,
-  spaceBetween: 20,
-  pagination: {
-    el: ".my-slider__pagination",
-    clickable: true,
-  },
+  spaceBetween: 30,
   navigation: {
-    nextEl: ".my-slider__button-next",
-    prevEl: ".my-slider__button-prev",
+    nextEl: ".services-slider__button-next",
+    prevEl: ".services-slider__button-prev",
+  },
+  breakpoints: {
+    // Настройки для экранов >= 320px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    // Настройки для экранов >= 768px
+    945: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // Настройки для экранов >= 1024px
+    1444: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
   },
 });
 
