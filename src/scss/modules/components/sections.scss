@@ -1044,6 +1044,11 @@
 @media (max-width: 1550px) {
   .why-us {
     &__wrapper {
+      cursor: grab;
+      user-select: none;
+      &.dragging {
+        cursor: grabbing;
+      }
     }
 
     &__header {
@@ -1060,6 +1065,9 @@
       width: 100vw;
       overflow: auto;
       margin-right: -20px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
     &__slider {
       width: min-content;

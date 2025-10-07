@@ -1015,6 +1015,13 @@ body {
 }
 
 @media (max-width: 1550px) {
+  .why-us__wrapper {
+    cursor: grab;
+    user-select: none;
+  }
+  .why-us__wrapper.dragging {
+    cursor: grabbing;
+  }
   .why-us__header {
     margin-bottom: 14px;
   }
@@ -1025,6 +1032,9 @@ body {
     width: 100vw;
     overflow: auto;
     margin-right: -20px;
+  }
+  .why-us__slider-wrapper::-webkit-scrollbar {
+    display: none;
   }
   .why-us__slider {
     width: min-content;
