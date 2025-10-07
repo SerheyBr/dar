@@ -26,6 +26,61 @@ const swiper = new Swiper(".services-slider", {
   },
 });
 
+const swiper2 = new Swiper(".our-results-slider", {
+  direction: "horizontal",
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".our-results-slider__button-next",
+    prevEl: ".our-results-slider__button-prev",
+  },
+  breakpoints: {
+    // Настройки для экранов >= 320px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    // Настройки для экранов >= 768px
+    945: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // Настройки для экранов >= 1024px
+    1444: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
+
+const swiper3 = new Swiper(".reviews-slider", {
+  direction: "horizontal",
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".reviews-slider__button-next",
+    prevEl: ".reviews-slider__button-prev",
+  },
+  breakpoints: {
+    // Настройки для экранов >= 320px
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 16,
+    },
+    // Настройки для экранов >= 768px
+    945: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    // Настройки для экранов >= 1024px
+    1444: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+  },
+});
 // 11111111111111111111111111111111111111111111111111111111111111111111111111
 /**
  * Инициализация Swiper слайдера
