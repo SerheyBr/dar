@@ -36,8 +36,130 @@
         </span>
       </div>
     </button> -->
+    <div class="popup-details">
+  <div class="popup-details__menu">
+    <button class="popup-details__btn-close">
+      <svg
+        width="14"
+        height="14"
+        viewBox="0 0 14 14"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M13.5097 13.5096C14.1634 12.8559 14.1634 11.7961 13.5097 11.1424L9.36725 7.00002L13.5097 2.85757C14.1634 2.2039 14.1634 1.14409 13.5097 0.490418C12.8561 -0.163252 11.7962 -0.163252 11.1426 0.490418L7.00008 4.63287L2.85743 0.490253C2.20375 -0.163418 1.14393 -0.163418 0.490258 0.490253C-0.163419 1.14392 -0.163419 2.20373 0.490257 2.8574L4.63291 7.00002L0.490305 11.1426C-0.163371 11.7963 -0.163372 12.8561 0.490305 13.5097C1.14398 14.1634 2.2038 14.1634 2.85748 13.5097L7.00008 9.36717L11.1425 13.5096C11.7962 14.1632 12.856 14.1632 13.5097 13.5096Z"
+          fill="black"
+        />
+      </svg>
+    </button>
+    <div class="popup-details__text-box">
+      <h5 class="popup-details__title">Название организации:</h5>
+      <p class="popup-details__text">
+        Общество с ограниченной ответственностью «ДАР»
+      </p>
+    </div>
+    <div class="popup-details__text-box">
+      <h5 class="popup-details__title">Юридический адрес организации:</h5>
+      <p class="popup-details__text">
+        195027, г. Санкт-Петербург, ул. Магнитогорская, дом 30, литер А,
+        помещение 9-Н
+      </p>
+      <p class="popup-details__text">ИНН: 7813281456</p>
+      <p class="popup-details__text">КПП: 780601001</p>
+      <p class="popup-details__text">ОГРН: 1177847213323</p>
+    </div>
+    <div class="popup-details__text-box">
+      <h5 class="popup-details__title">Расчетный счет:</h5>
 
-    <section class="hero section">
+      <p class="popup-details__text">40702810728260000869</p>
+      <p class="popup-details__text">
+        Банк: ФИЛИАЛ "ЦЕНТРАЛЬНЫЙ" БАНКА ВТБ (ПАО)
+      </p>
+      <p class="popup-details__text">
+        Корреспондентский счет: 30101810145250000411
+      </p>
+      <p class="popup-details__text">БИК: 044525411</p>
+      <p class="popup-details__text">ОКПО: 16039903</p>
+      <p class="popup-details__text">ОКВЭД: 82.99</p>
+    </div>
+    <div class="popup-details__text-box">
+      <h5 class="popup-details__title">Телефон:</h5>
+      <a href="tel:+79210012600" class="popup-details__link"
+        >+7 (921) 001-26-00</a
+      >
+    </div>
+    <div class="popup-details__text-box">
+      <h5 class="popup-details__title">Электронная почта:</h5>
+      <a
+        href="mailto:Info@fumigation-dar.ru"
+        class="popup-details__link popup-details__link--mail"
+        >Info@fumigation-dar.ru</a
+      >
+    </div>
+  </div>
+</div>
+
+    <div class="popup">
+  <div class="popup__wrapper">
+    <form class="popup-form">
+      <p class="popup-form__title">
+        Получите консультацию специалиста бесплатно
+      </p>
+      <p class="popup-form__subtitle">
+        Остались вопросы? <br />
+        Оставьте заявку и мы поможем вам
+      </p>
+      <div class="popup-form__inputs">
+        <label for="#" class="popup-form__label">
+          <img
+            src="assets/images/icons/person-form.svg"
+            class="popup-form__icon"
+            alt="person"
+          />
+          <input
+            type="text"
+            class="popup-form__input"
+            name="name"
+            placeholder="Ваше имя"
+          />
+        </label>
+        <label for="#" class="popup-form__label">
+          <img
+            src="assets/images/icons/phone-form.svg"
+            class="popup-form__icon"
+            alt="phone"
+          />
+          <input
+            type="text"
+            class="popup-form__input"
+            name="phone"
+            placeholder="Телефон"
+          />
+        </label>
+      </div>
+      <p class="popup-form__description">
+        Нажимая кнопку “Отправить заявку”, вы даете согласие на обработку
+        <a href="#">персональных данных</a>
+      </p>
+      <div class="popup-form__buttons">
+        <button type="button" class="popup-form__btn popup-form__btn--cancel">
+          Отмена
+        </button>
+        <button class="popup-form__btn popup-form__btn--request">
+          Оставить заявку
+        </button>
+      </div>
+    </form>
+    <div class="popup-success">
+      <p class="popup-success__title popup-form__title">Сообщение отправлено</p>
+      <p class="popup-success__subtitle popup-form__subtitle">
+        Ваше сообщение отправлено, скоро мы с вами свяжемся
+      </p>
+      <button class="popup-success__btn">Спасибо</button>
+    </div>
+  </div>
+</div>
+ <section class="hero section">
   <img
     src="assets/images/spot.png"
     alt=""
@@ -88,6 +210,7 @@
       >
     </div>
   </nav>
+  <div class="header-burger-menu__overlay"></div>
   <div class="header-burger-menu">
     <button class="header-burger-menu__burger-btn">
       <svg
@@ -111,7 +234,45 @@
         />
       </svg>
     </button>
-    <div class="header-burger-menu__menu"></div>
+    <div class="header-burger-menu__menu">
+      <button class="header-burger-menu__btn-close">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.5097 13.5096C14.1634 12.8559 14.1634 11.7961 13.5097 11.1424L9.36725 7.00002L13.5097 2.85757C14.1634 2.2039 14.1634 1.14409 13.5097 0.490418C12.8561 -0.163252 11.7962 -0.163252 11.1426 0.490418L7.00008 4.63287L2.85743 0.490253C2.20375 -0.163418 1.14393 -0.163418 0.490258 0.490253C-0.163419 1.14392 -0.163419 2.20373 0.490257 2.8574L4.63291 7.00002L0.490305 11.1426C-0.163371 11.7963 -0.163372 12.8561 0.490305 13.5097C1.14398 14.1634 2.2038 14.1634 2.85748 13.5097L7.00008 9.36717L11.1425 13.5096C11.7962 14.1632 12.856 14.1632 13.5097 13.5096Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <ul class="header-burger-menu__list">
+        <li>
+          <a href="#services">Услуги</a>
+        </li>
+        <li>
+          <a href="#about">О компании</a>
+        </li>
+        <li>
+          <a href="#why-us">Преимущества</a>
+        </li>
+        <li>
+          <a href="#steps">Этапы работы</a>
+        </li>
+        <li>
+          <a href="#our-results">Кейсы</a>
+        </li>
+        <li>
+          <a href="#reviews">Отзывы</a>
+        </li>
+        <li>
+          <a href="#footer">Контакты</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -324,6 +485,7 @@
       >
     </div>
   </nav>
+  <div class="header-burger-menu__overlay"></div>
   <div class="header-burger-menu">
     <button class="header-burger-menu__burger-btn">
       <svg
@@ -347,7 +509,45 @@
         />
       </svg>
     </button>
-    <div class="header-burger-menu__menu"></div>
+    <div class="header-burger-menu__menu">
+      <button class="header-burger-menu__btn-close">
+        <svg
+          width="14"
+          height="14"
+          viewBox="0 0 14 14"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M13.5097 13.5096C14.1634 12.8559 14.1634 11.7961 13.5097 11.1424L9.36725 7.00002L13.5097 2.85757C14.1634 2.2039 14.1634 1.14409 13.5097 0.490418C12.8561 -0.163252 11.7962 -0.163252 11.1426 0.490418L7.00008 4.63287L2.85743 0.490253C2.20375 -0.163418 1.14393 -0.163418 0.490258 0.490253C-0.163419 1.14392 -0.163419 2.20373 0.490257 2.8574L4.63291 7.00002L0.490305 11.1426C-0.163371 11.7963 -0.163372 12.8561 0.490305 13.5097C1.14398 14.1634 2.2038 14.1634 2.85748 13.5097L7.00008 9.36717L11.1425 13.5096C11.7962 14.1632 12.856 14.1632 13.5097 13.5096Z"
+            fill="black"
+          />
+        </svg>
+      </button>
+      <ul class="header-burger-menu__list">
+        <li>
+          <a href="#services">Услуги</a>
+        </li>
+        <li>
+          <a href="#about">О компании</a>
+        </li>
+        <li>
+          <a href="#why-us">Преимущества</a>
+        </li>
+        <li>
+          <a href="#steps">Этапы работы</a>
+        </li>
+        <li>
+          <a href="#our-results">Кейсы</a>
+        </li>
+        <li>
+          <a href="#reviews">Отзывы</a>
+        </li>
+        <li>
+          <a href="#footer">Контакты</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>
 
@@ -1224,17 +1424,15 @@
   </div>
 </section>
 
-    <section id="reviews" class="reviews section">
+    <!-- <section id="reviews" class="reviews section">
   <div class="container">
     <div class="reviews__wrapper">
       <div class="reviews__header">
         <div class="reviews__header-text">
-          <h2 class="reviews__title section-title">
-            Наш опыт в цифрах и примерах
-          </h2>
+          <h2 class="reviews__title section-title">Что говорят наши клиенты</h2>
           <p class="reviews__subtitle">
-            Каждый проект уникален, но все они объединены одним результатом —
-            безопасные и вовремя доставленные грузы.
+            Компании доверяют нам обработку и сопровождение грузов — и
+            рекомендуют «ДАР» своим партнёрам
           </p>
         </div>
 
@@ -1382,9 +1580,129 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-    
+    <footer id="footer" class="footer">
+  <div class="container">
+    <div class="footer__wrapper">
+      <div class="footer__body">
+        <div class="footer__column-location">
+          <img src="assets/images/logo.svg" alt="logo" />
+          <p class="footer__location">
+            Фумигация, логистика и таможенные услуги в Санкт-Петербурге
+          </p>
+          <div class="footer__details">
+            <p>Реквизиты компании</p>
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer-element">
+            <p class="footer-element__title">Телефон</p>
+            <a href="tel:+79210012600" class="footer-element__link"
+              >+7 (921) 001-26-00</a
+            >
+          </div>
+          <div class="footer-element">
+            <p class="footer-element__title">Тg/ WhatsApp</p>
+            <a href="tel:+79210012600" class="footer-element__link"
+              >+7 (921) 001-26-00</a
+            >
+          </div>
+        </div>
+        <div class="footer__column">
+          <div class="footer-element">
+            <p class="footer-element__title">E-mail:</p>
+            <a href="mailto:Info@fumigation-dar.ru" class="footer-element__link"
+              >Info@fumigation-dar.ru</a
+            >
+          </div>
+          <div class="footer__social">
+            <p>Социальные сети:</p>
+            <div class="footer__social-links">
+              <a href="#"
+                ><svg
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16.3419 12.3376C16.3009 12.3162 14.7681 11.4977 14.4958 11.3914C14.3846 11.3481 14.2654 11.3058 14.1387 11.3058C13.9318 11.3058 13.7579 11.4177 13.6225 11.6374C13.4693 11.8842 13.0058 12.4718 12.8626 12.6473C12.8439 12.6705 12.8184 12.6982 12.8031 12.6982C12.7894 12.6982 12.5521 12.5922 12.4803 12.5584C10.836 11.7838 9.58797 9.9211 9.41683 9.60698C9.39239 9.56182 9.39136 9.54132 9.39116 9.54132C9.39717 9.5174 9.45246 9.45729 9.481 9.42627C9.56448 9.33669 9.65493 9.21861 9.74245 9.10438C9.78389 9.05026 9.82539 8.99607 9.86614 8.94499C9.99311 8.78479 10.0496 8.66041 10.1152 8.51635L10.1495 8.4415C10.3095 8.09673 10.1729 7.80579 10.1287 7.71184C10.0924 7.63322 9.44523 5.93923 9.37641 5.76125C9.21094 5.3318 8.99229 5.13184 8.68845 5.13184C8.66025 5.13184 8.68845 5.13184 8.57021 5.13724C8.42624 5.14383 7.64223 5.25577 7.29558 5.49274C6.92798 5.74408 6.30609 6.54525 6.30609 7.95422C6.30609 9.22231 7.04812 10.4196 7.36671 10.875C7.37463 10.8865 7.38917 10.9098 7.41027 10.9433C8.63035 12.8756 10.1514 14.3077 11.6932 14.9757C13.1776 15.6187 13.8806 15.6931 14.2802 15.6931H14.2803C14.4482 15.6931 14.5826 15.6788 14.7012 15.6661L14.7764 15.6583C15.2892 15.609 16.4161 14.9758 16.6724 14.2032C16.8744 13.5948 16.9276 12.93 16.7933 12.6887C16.7012 12.5246 16.5427 12.4421 16.3419 12.3376Z"
+                    fill="#28A745"
+                  />
+                  <path
+                    d="M11.1874 0.437988C5.46681 0.437988 0.812737 5.05708 0.812737 10.7347C0.812737 12.5711 1.30418 14.3686 2.23514 15.9418L0.453244 21.1981C0.420051 21.2961 0.44474 21.4044 0.517228 21.4782C0.569554 21.5316 0.640534 21.5604 0.713023 21.5604C0.740797 21.5604 0.768778 21.5563 0.796072 21.5475L6.27694 19.8059C7.77677 20.6073 9.47192 21.0303 11.1875 21.0303C16.9076 21.0303 21.5612 16.4117 21.5612 10.7347C21.5612 5.05708 16.9076 0.437988 11.1874 0.437988ZM11.1874 18.8854C9.57314 18.8854 8.0096 18.4193 6.66558 17.5374C6.62039 17.5077 6.56792 17.4924 6.51512 17.4924C6.48721 17.4924 6.45923 17.4967 6.432 17.5053L3.68642 18.3781L4.57274 15.7632C4.60141 15.6786 4.58707 15.5853 4.53427 15.5131C3.51079 14.1146 2.96977 12.4624 2.96977 10.7347C2.96977 6.2398 6.65619 2.58288 11.1874 2.58288C15.718 2.58288 19.404 6.2398 19.404 10.7347C19.4041 15.2291 15.7181 18.8854 11.1874 18.8854Z"
+                    fill="#28A745"
+                  />
+                </svg>
+              </a>
+              <a href="#">
+                <svg
+                  width="22"
+                  height="20"
+                  viewBox="0 0 22 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.34265 8.78909C1.34265 8.78909 10.6846 4.66751 13.9245 3.2162C15.1666 2.63573 19.3785 0.778044 19.3785 0.778044C19.3785 0.778044 21.3226 -0.0346215 21.1605 1.93908C21.1065 2.75182 20.6745 5.59627 20.2425 8.67299C19.5945 13.0268 18.8925 17.787 18.8925 17.787C18.8925 17.787 18.7845 19.1222 17.8666 19.3544C16.9486 19.5866 15.4365 18.5417 15.1666 18.3094C14.9505 18.1353 11.1166 15.523 9.71259 14.2459C9.33458 13.8976 8.90261 13.201 9.76655 12.3883C11.7106 10.4726 14.0325 8.09252 15.4365 6.5832C16.0846 5.88655 16.7325 4.26114 14.0325 6.23483C10.1986 9.07936 6.41862 11.7497 6.41862 11.7497C6.41862 11.7497 5.5546 12.3302 3.93463 11.8077C2.31459 11.2853 0.424597 10.5887 0.424597 10.5887C0.424597 10.5887 -0.871319 9.71793 1.34265 8.78909Z"
+                    fill="#28A745"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <form class="footer__form footer-form">
+          <h4 class="footer-form__title">Остались вопросы?</h4>
+          <p class="footer-form__subtitle">
+            Наши специалисты помогут вам прямо сегодня
+          </p>
+          <div class="footer-form__inputs">
+            <label class="footer-form__label">
+              <p>Ваше имя</p>
+              <input type="text" name="name" placeholder="Ваше имя" />
+            </label>
+            <label class="footer-form__label">
+              <p>Телефон</p>
+              <input type="text" name="phone" placeholder="Телефон" />
+            </label>
+          </div>
+          <div class="footer-form__bottom">
+            <button class="footer-form__btn">
+              <p>Отправить</p>
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.16663 6.99984H12.8333M12.8333 6.99984L6.99996 1.1665M12.8333 6.99984L6.99996 12.8332"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <p>
+              *Оставляя данные, вы даете свое согласие на обработку персональных
+              данных.
+            </p>
+          </div>
+        </form>
+      </div>
+      <div class="footer__bottom">
+        <p>2025 dar.ru</p>
+        <p>Разработка сайта: <a href="https://a-media.kz/">a-media.kz </a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 
     <script src="assets/libs/swiper/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

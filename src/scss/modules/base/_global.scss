@@ -26,6 +26,16 @@ body {
   margin-bottom: 80px;
   // overflow-x: hidden;
 }
+@media (max-width: 1470px) {
+  .section {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: $breakpoint-md) {
+  .section {
+    margin-bottom: 30px;
+  }
+}
 .section-title {
   font-weight: 700;
   font-size: 48px;
@@ -81,6 +91,20 @@ body {
         svg {
           width: 35%;
         }
+      }
+    }
+  }
+}
+@media (min-width: 769px) {
+  .button {
+    transition: all 0.5s;
+    svg {
+      transition: all 0.5s;
+    }
+    &:hover {
+      background-color: #28a746da;
+      svg {
+        transform: rotate(45deg);
       }
     }
   }
